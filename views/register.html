@@ -12,12 +12,88 @@
 	<link href="../resources/css/my_style.css" rel="stylesheet">
   </head>
   <body>
-	
+
 	<img src="../resources/img/beproudcapaabanner.jpg" class="img-fluid" alt="Registration Page Banner for CU Football">
     <br>
 	<br>
 	<div class="container">
 		<form action="home.html">
+				<div class="form-group">
+						<label for="registerInput">Name</label>
+						<input type="text" class="form-control" id="registerNameInput" placeholder="Your Name">
+				</div>
+				<div class="form-group">
+						<label for="registerInput">Email</label>
+						<input type="text" class="form-control" id="registerEmailInput" placeholder="Your Email">
+				</div>
+				<div class="form-group">
+						<label for="registerInput">Password</label>
+						<input type="text" class="form-control" id="registerPasswordInput" placeholder="Your Password">
+				</div>
+				<div class="form-group">
+						<label for="registerInput">Password</label>
+						<input type="text" class="form-control" id="registerPasswordConfirmInput" placeholder="Confirm Password">
+				</div>
+				CU Alumni?
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="registerAlumniRadio" id="registerAlumniYes" value="option1" checked>
+					<label class="form-check-label" for="registerInput">
+						Yes
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="registerAlumniRadio" id="registerAlumniNo" value="option2">
+					<label class="form-check-label" for="registerInput">
+						No
+					</label>
+				</div>
+				CU Student?
+				<div class="form-check">
+						<input class="form-check-input" type="radio" name="registerStudentRadio" id="registerStudentYes" value="option1" checked>
+						<label class="form-check-label" for="registerInput">
+							Yes
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="registerStudentRadio" id="registerStudentNo" value="option2">
+						<label class="form-check-label" for="registerInput">
+							No
+						</label>
+					</div>
+					Degree Type:
+					<div class="form-check">
+							<input class="form-check-input" type="radio" name="registerDegreeRadio" id="registerDegreeGrad" value="option1" checked>
+							<label class="form-check-label" for="registerInput">
+								Graduate
+							</label>
+							<div class="Dropdown">
+									<button class="btn btn-secondary dropdown-toggle" type="button" id="registerGradSelectDegree" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Select Degree
+									</button>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">MA</a>
+										<a class="dropdown-item" href="#">MBA</a>
+										<a class="dropdown-item" href="#">PhD</a>
+									</div>
+							</div>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="registerDegreeRadio" id="registerDegreeUndergrad" value="option2">
+						<label class="form-check-label" for="registerInput">
+							Undergraduate
+						</label>
+						<div class="Dropdown">
+								<button class="btn btn-secondary dropdown-toggle" type="button" id="registerUndergradSelectYear" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Select Year
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Freshman</a>
+									<a class="dropdown-item" href="#">Sophomore</a>
+									<a class="dropdown-item" href="#">Junior</a>
+									<a class="dropdown-item" href="#">Senior</a>
+								</div>
+						</div>
+					</div>
 			<!--
 				Todo: Create a form with the following fields:
 					1. Name Text Field
