@@ -10,6 +10,20 @@
     <!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link href="../resources/css/my_style.css" rel="stylesheet">
+	<script>
+		function loadStatsPage() {
+			table = document.getElementById("stats_table")
+			for (var i = 2; i < table.rows.length; i++) {
+				var row = table.rows[i]
+				if (row.cells[2].innerHTML > row.cells[3].innerHTML) {
+					row.cells[4].innerHTML = "Colorado"
+				}
+				else {
+					row.cells[4].innerHTML = row.cells[1].innerHTML
+				}
+			}
+		}
+	</script>
   </head>
   <body onload="loadStatsPage()">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
